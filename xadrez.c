@@ -38,5 +38,26 @@ int main(){
         i++; // Incrementa o contador para evitar looping infinito
     } while (i < casas_rainha);
 
+    //Movimentação do CAVALO
+    printf("\n"); // Linha em branco para uma melhor organização
+    printf("--- Movimento do Cavalo ---\n");
+
+    /*O loop "do-while" externo assegura que os movimentos do cavalo
+    em "L" sejam tratados como um único bloco lógico, sendo executado apenas uma vez*/
+    int movimento_cavalo_completo = 0;
+    do {
+        for (i = 0; i < casas_cavalo_vertical; i++){
+            printf("Baixo\n");
+        }
+
+        i = 0; // Reinicia o contador para o próximo loop
+        while (i < casas_cavalo_horizontal){
+            printf("Esquerda\n");
+            i++;
+        }
+
+        movimento_cavalo_completo++; // incrementa para sair do loop externo
+    } while (movimento_cavalo_completo < 1);
+
     return 0;
 }
