@@ -128,5 +128,5 @@ void moverRainhaRecursivo(int casas) {
     
     printf("Esquerda\n"); // Imprime o movimento para a esquerda
 
-    moverRainhaRecursivo(casas - 1); // Chamada recursiva: move para a próxima casa
+    moverRainhaRecursivo(casas - 1); // Chamada recursiva: move para a próxima casa.
 }
